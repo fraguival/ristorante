@@ -1,0 +1,25 @@
+.chef h2 {
+        display: inline-block;
+        background-color: $danger;
+        color: $light;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        border-radius: 12px;
+}
+@media(min-width: 768px) {
+        .contenido-chef {
+                display: flex;
+                justify-content: space-between;
+        }
+}
+.texto-chef, .imagen-chef {
+        flex: 0 0 calc(50% - 1rem);
+}
+.texto-chef h3 {
+        font-size: 3rem;
+}
+.texto-chef p {
+        font-size: 2rem;
+        
+}
+

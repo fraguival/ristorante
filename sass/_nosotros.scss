@@ -1,0 +1,36 @@
+.contenedor-nosotros {
+        padding-top: 5rem;
+}
+.texto-nosotros .bienvenida  {
+        color: $success;
+        font-size: 4rem;
+        text-align: center;
+}
+.texto-nosotros h1 {
+        font-size: 5rem;
+        text-align: center;
+}
+.texto-nosotros p {
+        font-size: 2rem;
+        text-align: center;
+}
+.texto-nosotros, .imagenes-nosotros {
+        flex: 0 0 calc(50% - 1rem);
+}
+.imagenes-nosotros {
+        display: flex;
+        justify-content: space-between;
+}
+.imagen1, .imagenes2 {
+        flex: 0 0 calc(50% - 1rem);
+}
+.imagenes2 {
+        margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+        .texto-nosotros .bienvenida,
+        .texto-nosotros h1,
+        .texto-nosotros p {
+                text-align: left;
+        }
+}

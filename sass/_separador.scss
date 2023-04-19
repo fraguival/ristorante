@@ -1,0 +1,42 @@
+.separador {
+        position: relative;
+        z-index: 2;
+        background-image: url('../imagenes/img/ensalada.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.separador::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, .5);
+}
+.contenido-separador {
+        padding: 5rem;
+}
+.contenido-separador h2 {
+        color: $light;
+        font-size: 4rem;
+        text-align: center; 
+}
+@media (min-width: 768px) {
+        .contenido-separador h2 {
+                font-size: 5rem;
+                text-align: left;
+        }
+}
+.contenido-separador p {
+        color: $light;
+        font-size: 3rem;
+        text-align: center;
+}
+@media (min-width: 768px) {
+        .contenido-separador p {
+                text-align: left;
+        }
+}
